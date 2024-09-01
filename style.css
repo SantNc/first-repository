@@ -1,0 +1,221 @@
+/*Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+.interfacem{
+   max-width: 1280px;
+   margin: 0 auto;
+   text-align: center;
+}
+/*Cabeçalho */
+header{
+    padding: 50px 4%;
+    color: white;
+}
+
+header nav ul {
+    list-style-type:none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header a{
+    color: rgba(255, 255, 255, 0.993);
+    text-decoration: none;
+    display: inline-block;
+}
+header a:hover{
+    color: rgba(116, 110, 110, 0.658);
+}
+.menu-desk{
+    font-size: 20px;
+    
+}
+/*Topo*/
+.cont1{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    width: 100vw; /* Garante que o container ocupe toda a largura da viewport */
+    height: 100vh; /* Garante que o container ocupe toda a altura da viewport */
+}
+section.topo{
+    padding: 40px 4%;
+}
+
+section.topo .flex{
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1{
+    font-size: 40px;
+}
+
+.topo p {
+    font-size: 25px;
+}
+
+.texto{
+    position: relative;
+    left: 100px;
+    top: -130px;
+    color: rgba(255, 255, 255, 0.507);
+}
+.p1{
+   position: relative;
+   left: 180px;
+   top: 10px;
+}
+.p2{
+    position: relative;
+    left: 200px;
+    top: 10px;
+ }
+ .p3{
+    position: relative;
+    left: 80px;
+    top: 10px;
+ }
+
+.img-topo{
+    max-width: 100%;
+    height: auto;
+    margin-right: 50px;
+    position: relative;
+    top: -800px;
+}
+/*Estilo Sobre*/
+.cont2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.sobre-mim{
+    padding: 40px 4%;
+}
+section.sobre-mim .flex{
+    gap: 60px;
+}
+.sobre-mim .balaopensa{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+/*Balão estilo*/
+.balaopensa {
+    align-items: center;
+    justify-items: center;
+    background-color: #37585e;
+    color: #333;
+    padding: 25px;
+    border-radius: 20px;
+    width: fit-content;
+    max-width: 700px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.balaopensa::before,
+.balaopensa::after {
+    content: '';
+    align-items: center;
+    justify-items: center;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/*Estilo Imagens Formação*/
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vw;
+}
+
+.img-forma{
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.txt-adv{
+    color: white;
+    font-size: 22px;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+    top: -1500px;
+}
+.img-uni{
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+.txt-uni{
+    color: white;
+    font-size: 22px;
+}
+/*Formulario Contato*/
+
+section.contato{
+    padding: 80px 4%;
+}
+
+.Titulo{
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    display: flex;
+    gap: 15px;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 11px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color:#37585e5e;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    color: #ffffff;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar{
+    text-align: center;
+    margin-top: 200px;
+}
+form .btn-enviar input [type=submit]{
+    width: 120px;
+}
+
